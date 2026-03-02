@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "Krk5H4AntfU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akozm\\RiderProjects\\PushNotification.API\\PushNotification.API\\PushNotification.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akozm\\.nuget\\packages\\automapper\\16.0.0\\automapper.16.0.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.azure.notificationhubs\\4.2.0\\microsoft.azure.notificationhubs.4.2.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.13\\microsoft.entityframeworkcore.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.13\\microsoft.entityframeworkcore.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.13\\microsoft.entityframeworkcore.analyzers.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.13\\microsoft.extensions.caching.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.13\\microsoft.extensions.caching.memory.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.13\\microsoft.extensions.dependencyinjection.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.logging\\9.0.13\\microsoft.extensions.logging.9.0.13.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.options\\10.0.0\\microsoft.extensions.options.10.0.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.14.0\\microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.identitymodel.logging\\8.14.0\\microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\akozm\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
