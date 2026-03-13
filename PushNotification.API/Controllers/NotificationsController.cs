@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using PushNotification.API.Constants;
 using PushNotification.API.Models;
 using PushNotification.API.Models.PushNotification;
 using PushNotification.API.Services.Interfaces;
@@ -66,7 +65,6 @@ public class NotificationsController : ControllerBase
             {
                 Title = "Test",
                 Message = "Test notification",
-                Platform = Platform.All,
                 Tags = new()
             });
 

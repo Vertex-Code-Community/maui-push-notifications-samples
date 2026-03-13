@@ -2,9 +2,7 @@
 
 public static class Platform
 {
-    public const string IOS = "IOS";
     public const string Android = "Android";
-    public const string All = "All";
 }
 
 public static class AuthenticationType

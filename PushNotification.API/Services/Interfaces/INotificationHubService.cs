@@ -9,6 +9,6 @@ public interface INotificationHubService
     Task<bool> CreateOrUpdateInstallationAsync(DeviceInstallation deviceInstallation, CancellationToken token);
     Task<bool> DeleteInstallationByIdAsync( string installationId, CancellationToken token);
     Task<List<NotificationOutcome []>?> RequestNotificationAsync(long notificationId,
-        NotificationRequest notificationRequest, string platform, CancellationToken token);
+        NotificationRequest notificationRequest, CancellationToken token);
 }
 

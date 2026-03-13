@@ -35,7 +35,6 @@ public class NotificationService : INotificationService
         return await _notificationHubService.RequestNotificationAsync(
             notificationModel.Id,
             notificationRequest,
-            notificationModel.Platform,
             cancellationToken);
     }
 }
