@@ -69,15 +69,15 @@ public class NotificationHubService : INotificationHubService
         }
     }
 
-    public async Task<List<NotificationOutcome[]>?> RequestNotificationAsync(
+    public async Task<SendResult> SendPushAsync(
         long notificationId,
         NotificationRequest notificationRequest,
         CancellationToken token)
     {
         if (string.IsNullOrWhiteSpace(notificationRequest?.Text))
-            return null;
+            return SendResult.Fail("Notification text is empty");
 
-        var payload = PrepareNotificationPayload(
+        var payload = BuildPayload(
             PushTemplates.DataOnly.Android,
             notificationRequest.Title,
             notificationRequest.Text,
@@ -85,23 +85,23 @@ public class NotificationHubService : INotificationHubService
 
         try
         {
-            NotificationOutcome[] outcome;
+            NotificationOutcome outcome;
 
             if (string.IsNullOrWhiteSpace(notificationRequest.TagExpression))
-                outcome = [await _hub.SendFcmV1NativeNotificationAsync(payload, token)];
+                outcome = await _hub.SendFcmV1NativeNotificationAsync(payload, token);
             else
-                outcome = [await _hub.SendFcmV1NativeNotificationAsync(payload, notificationRequest.TagExpression, token)];
+                outcome = await _hub.SendFcmV1NativeNotificationAsync(payload, notificationRequest.TagExpression, token);
 
-            return [outcome];
+            return SendResult.Ok(outcome.TrackingId);
         }
         catch (Exception e)
         {
             _logger.LogError(e, "Unexpected error sending notification");
-            return null;
+            return SendResult.Fail(e.Message);
         }
     }
 
-    private string PrepareNotificationPayload(string template, string title, string text, string url) => template
+    private string BuildPayload(string template, string title, string text, string url) => template
         .Replace("$(titlePlaceholder)", title ?? "", StringComparison.InvariantCulture)
         .Replace("$(messagePlaceholder)", text ?? "", StringComparison.InvariantCulture)
         .Replace("$(urlPlaceholder)", url ?? "", StringComparison.InvariantCulture);

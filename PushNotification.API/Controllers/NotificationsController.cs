@@ -61,7 +61,7 @@ public class NotificationsController : ControllerBase
     {
         // Probably want to ensure deletion even if the connection is broken
         var success = await _notificationService
-            .RequestSendNotification(new NotificationModel()
+            .SendNotificationAsync(new NotificationModel()
             {
                 Title = "Test",
                 Message = "Test notification",

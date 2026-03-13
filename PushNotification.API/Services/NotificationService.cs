@@ -1,6 +1,4 @@
-﻿using Microsoft.Azure.NotificationHubs;
-using PushNotification.API.Constants;
-using PushNotification.API.Models;
+﻿using PushNotification.API.Models;
 using PushNotification.API.Models.PushNotification;
 using PushNotification.API.Services.Interfaces;
 using PushNotification.API.Utilites;
@@ -16,8 +14,7 @@ public class NotificationService : INotificationService
         _notificationHubService = notificationHubService;
     }
 
-
-    public async Task<List<NotificationOutcome[]>?> RequestSendNotification(
+    public async Task<SendResult> SendNotificationAsync(
         NotificationModel notificationModel,
         CancellationToken cancellationToken)
     {
@@ -32,7 +29,7 @@ public class NotificationService : INotificationService
         };
 
 
-        return await _notificationHubService.RequestNotificationAsync(
+        return await _notificationHubService.SendPushAsync(
             notificationModel.Id,
             notificationRequest,
             cancellationToken);
